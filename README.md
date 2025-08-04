@@ -1,6 +1,6 @@
 # Desafio Técnico - Pokémon App Full Stack
 
-Este projeto é uma aplicação full stack desenvolvida com **TypeScript** para o desafio técnico, onde o usuário pode realizar login e, após autenticado, acessar uma listagem de dados de Pokémons obtidos de uma API pública.
+Este projeto é uma aplicação full stack desenvolvida com **TypeScript** para o desafio técnico solicitado para o teste da iGreen Energy, onde o usuário pode realizar login e, após autenticado, acessar uma listagem de dados de Pokémons obtidos de uma API pública.
 
 ---
 
@@ -64,4 +64,5 @@ Abra seu terminal e clone o repositório do GitHub:
 
 ```bash
 git clone <URL_DO_SEU_REPOSITORIO>
+
 cd desafio-fullstack-pokemon
