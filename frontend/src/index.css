@@ -1,0 +1,71 @@
+/* Importação de fonte temática (ex: 'Press Start 2P' ou 'Comfortaa' mais suave) */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Press+Start+2P&display=swap');
+
+:root {
+  /* Cores Pokémon de referência */
+  --pokemon-red: #cc0000;
+  --pokemon-blue: #3b4cca;
+  --pokemon-yellow: #ffde00;
+  --pokemon-dark-blue: #002244; /* Para texto/fundo mais escuro */
+  --pokemon-light-gray: #f2f2f2;
+  --pokemon-white: #ffffff;
+  --text-dark: #333;
+  --text-light: #eee;
+}
+
+body {
+  margin: 0;
+  font-family: 'Comfortaa', Arial, sans-serif; /* Fonte principal, mais suave */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--pokemon-light-gray);
+  color: var(--text-dark);
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos de botão base */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  font-weight: bold;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Estilos de input base */
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid var(--pokemon-blue);
+  border-radius: 5px;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box; /* Garante que padding e border não aumentem o width */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: var(--pokemon-red);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
